@@ -1,0 +1,55 @@
+:root {
+    --height: 40px;
+    --padding-x: 20px;
+    --padding-y: 10px;
+    --color: #3c464d;
+}
+.wombat-select-native {
+    border: 0!important;
+    clip: rect(0px, 0px, 0px, 0px)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+}
+.wombat-select {
+    box-sizing: border-box;
+    color: var(--color);
+}
+.wombat-select-value {
+    padding: var(--padding-y) calc(var(--padding-x)*1.6) var(--padding-y) var(--padding-x);
+    cursor: pointer;
+    border: 1px solid #c1c1c1;
+    border-radius: 2px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+.wombat-select-value:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wombat-select-dropdown {
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.wombat-select-option {
+    padding: var(--padding-y) var(--padding-x);
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.wombat-select-option:hover {
+    background-color: #f3f3f3;
+}
