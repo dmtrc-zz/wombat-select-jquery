@@ -73,8 +73,8 @@
 
       dropdownStyle.position = 'absolute';
       dropdownStyle.width = `${customSelectValue.offsetWidth}px`;
-      dropdownStyle.left = `${boundingRect.x}px`;
-      dropdownStyle.top = `${boundingRect.y + boundingRect.height}px`;
+      dropdownStyle.left = `${boundingRect.x + pageXOffset}px`;
+      dropdownStyle.top = `${boundingRect.y + pageYOffset + boundingRect.height}px`;
     }
 
     //add DROPDOWN element to Body element when VALUE is clicked
